@@ -1,13 +1,16 @@
 import Navbar from "@/app/(browser)/_components/navbar";
+import Sidebar from "@/app/(browser)/_components/sidebar";
+import Container from "@/app/(browser)/_components/container";
 
 export default function BrowserLayout({children}: { children: React.ReactNode }) {
     return (
         <>
-            <nav>
-                <Navbar />
-            </nav>
-            <div className="flex pt-20">
-                {children}
+            <Navbar/>
+            <div className="flex h-full pt-20">
+                <Sidebar/>
+                <Container>
+                    {children}
+                </Container>
             </div>
 
         </>
