@@ -13,7 +13,7 @@ interface UserItemProps{
     imageUrl: string,
     isLive?: boolean,
 }
-export default function UserItem({
+export function UserItem({
     username,
     imageUrl,
     isLive,

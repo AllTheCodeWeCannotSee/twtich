@@ -4,6 +4,7 @@ import {cn} from "@/lib/utils";
 import {useEffect, useState} from "react";
 import {ToggleSkeleton} from "@/app/(browser)/_components/sidebar/toggle";
 import {RecommendedSkeleton} from "@/app/(browser)/_components/sidebar/recommend";
+import {FollowingSkeleton} from "@/app/(browser)/_components/sidebar/following";
 
 interface WrapperProps {
     children: React.ReactNode,
@@ -20,6 +21,7 @@ export default function Wrapper({ children }: WrapperProps) {
     if (!isClient) return (
         <aside className="fixed w-[70px] lg:w-60 left-0 flex flex-col h-full bg-background border-r border-[#2D2EE35] z-50">
             <ToggleSkeleton />
+            <FollowingSkeleton />
             <RecommendedSkeleton />
         </aside>
     );
