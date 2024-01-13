@@ -3,8 +3,8 @@ import Link from "next/link";
 import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
 import {useSidebar} from "@/store/use-sidebar";
-import UserAvatar from "@/components/user-avatar";
-import LiveBadge from "@/components/live-badge";
+import { UserAvatar } from "@/components/user-avatar";
+import { LiveBadge } from "@/components/live-badge";
 import {Skeleton} from "@/components/ui/skeleton";
 
 
